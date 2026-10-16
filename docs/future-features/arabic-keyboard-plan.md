@@ -3,7 +3,7 @@
 
 ## Context
 
-`fixes.md` and general usability feedback point at the same friction: typing Arabic conjugations (with full diacritics/harakat) requires a physical Arabic keyboard or OS-level IME, which not every student has set up. The drill's `handleSubmit` in `DrillCard.jsx` does an exact string match (`inputValue.trim() === correctAnswer`) against fully-vocalized forms like `فَعَلَ` or `إِسْتَفْعَلَ`, so users need a reliable way to produce both base letters *and* diacritics. This plan adds a mouse-clickable on-screen Arabic keyboard so students can type answers without a physical Arabic layout.
+Typing Arabic conjugations (with full diacritics/harakat) requires a physical Arabic keyboard or OS-level IME, which not every student has set up. The drill's `handleSubmit` in `DrillCard.jsx` does an exact string match (`inputValue.trim() === correctAnswer`) against fully-vocalized forms like `فَعَلَ` or `إِسْتَفْعَلَ`, so users need a reliable way to produce both base letters *and* diacritics. This plan adds a mouse-clickable on-screen Arabic keyboard so students can type answers without a physical Arabic layout.
 
 This is additive UI only — it does not touch the retype/mastery state machine, timing, or scoring logic that CLAUDE.md flags as off-limits.
 

@@ -1,9 +1,18 @@
+# User Feedback & Observations
 
-**Data/Code**
+## Usability Friction
 
-1. Allow the person to enter the end of the sarf of the verb,not the whole answer
+**UI Input Design**
+- Verb input design should be more consistent and aid comprehension
+- Students struggle typing full diacritics (harakat) without a physical Arabic keyboard or OS IME
 
+## Rejected Ideas
 
-**UI**
+**Partial Answer Entry** ❌
+- _Suggestion_: Allow students to enter just the word-ending instead of the full conjugation
+- _Status_: Rejected
+- _Reason_: The retype-before-advance mechanic is intentional pedagogy (per CLAUDE.md). Allowing partial answers would weaken the learning loop and create ambiguity in answer validation.
 
-- Make the design of the verb entering consistent and aided for understanding. Does not seem consistent right now
+## Related Work
+
+See [arabic-keyboard-plan.md](./arabic-keyboard-plan.md) — planned solution to diacritic-input friction.
